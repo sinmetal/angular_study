@@ -15,6 +15,7 @@
             <mat-divider></mat-divider>
             <h3 matSubheader>天気予報</h3>
             <mat-list-item *ngFor="let pref of (areasObservable | async)" [routerLink]="['/forecast', pref.city]" routerLinkActive="active">{{pref.label}}</mat-list-item>
+            <mat-list-item routerLink="/pugevent" routerLinkActive="active">EVENT</mat-list-item>
         </mat-nav-list>
     </mat-sidenav>
 
