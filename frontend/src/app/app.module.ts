@@ -26,6 +26,8 @@ import { LoadingService } from './services/loading.service';
 import { AreaService } from './services/area.service';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { PugeventComponent } from './pugevent/pugevent.component';
+import {PugeventService} from "./services/pugevent.service";
+import { GeneralDatePipe } from './pipe/general-date.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { PugeventComponent } from './pugevent/pugevent.component';
     AreaEditComponent,
     ForecastComponent,
     UnixTimeDatePipe,
-    PugeventComponent
+    PugeventComponent,
+    GeneralDatePipe
   ],
   imports: [
     ChartsModule,
@@ -55,6 +58,7 @@ import { PugeventComponent } from './pugevent/pugevent.component';
   providers: [
     AreaService,
     OpenWeatherMapService,
+    PugeventService,
     LoadingService,
     {
       provide: HTTP_INTERCEPTORS,

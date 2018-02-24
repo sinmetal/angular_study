@@ -1,4 +1,3 @@
-
 /*!
  * Chart.js
  * http://chartjs.org/
@@ -14144,3 +14143,5 @@ module.exports = function(Chart) {
 
 },{"1":1,"25":25,"45":45}]},{},[7])(7)
 });
+;
+//# sourceMappingURL=scripts.bundle.js.map
