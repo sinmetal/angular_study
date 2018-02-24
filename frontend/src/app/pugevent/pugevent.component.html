@@ -1,0 +1,16 @@
+<div *ngIf="(eventsObservable | async) as events">
+  <mat-list>
+    <mat-list-item *ngFor="let event of events.list" class="mat-elevation-z1">
+      <img mat-card-avatar src="/logo_box.png">
+      <h2 mat-line>
+        <span><a href="https://gcpug-tokyo.connpass.com/event/78667/" target="_blank">{{event.title}}</a></span>
+      </h2>
+      <p mat-line>
+        <span>Title : {{event.title}}</span>
+      </p>
+      <p mat-line>
+        <span>{{event.startAt | generalDate}}</span>
+      </p>
+    </mat-list-item>
+  </mat-list>
+</div>

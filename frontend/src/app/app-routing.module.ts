@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ForecastComponent } from './forecast/forecast.component';
 import { AreaEditComponent } from './area-edit/area-edit.component';
+import { PugeventComponent } from './pugevent/pugevent.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'forecast/:city',
     component: ForecastComponent
+  },
+  {
+    path: 'pugevent',
+    component: PugeventComponent
   }
 ];
 
